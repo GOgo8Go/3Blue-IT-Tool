@@ -31,7 +31,12 @@
     <title>UUID生成器 - 蔚蓝工具导航站</title>
     
     <!-- <link href="https://fonts.googleapis.com/css?family=SF+Pro+Display:400,600&display=swap" rel="stylesheet"> -->
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="../styles/sidebar.css" />
     <link rel="stylesheet" href="../styles/uuid_generation.css">
     
     <!-- Umami 统计脚本延迟加载器 -->
@@ -39,22 +44,7 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="nav-logo">
-            <img src="../tools.png" alt="Tools Logo" style="width: 30px;">
-            <a href="../index.html">蔚蓝工具导航</a>
-        </div>
-        <ul class="nav-links">
-            <li><a href="../index.html#preview">返回</a></li>
-        </ul>
-        <div class="theme-switch">
-            <input type="checkbox" id="theme-toggle">
-            <label for="theme-toggle">
-                <i class="fas fa-sun"></i>
-                <i class="fas fa-moon"></i>
-            </label>
-        </div>
-    </nav>
+    <!-- 侧边栏由 sidebar.js 动态加载 -->
 
     <main class="uuid-generator">
         <h1>UUID生成器</h1>
@@ -96,12 +86,7 @@
         <pre id="jie_guo_nei_rong"></pre>
     </main>
 
-    <footer>
-        <p>&copy; 2025 蔚蓝个人工具导航站 
-            <a href="https://github.com/core666666/Blue-IT-Tool" target="_blank">GitHub开源地址</a>
-        </p>
-    </footer>
-
+    <script src="../scripts/sidebar.js"></script>
     <script src="../scripts/index.js"></script>
     <script src="../scripts/uuid_generation.js"></script>
 </body>

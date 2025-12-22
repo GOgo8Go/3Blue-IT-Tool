@@ -44,23 +44,15 @@
     <link rel="icon" type="image/png" href="../tools.png">
     <link rel="apple-touch-icon" href="../tools.png">
     <link rel="shortcut icon" type="image/png" href="../tools.png">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles/sidebar.css">
+    <link rel="stylesheet" href="../styles/nine_grid.css"> 
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="nav-logo"><img src="../tools.png" alt="Tools Logo" style="width: 30px;"><a href="../index.html">蔚蓝工具导航</a>
-        </div>
-        <ul class="nav-links">
-            <li><a href="../index.html#preview">返回</a></li>
-        </ul>
-        <!-- 主题切换按钮 -->
-        <div class="theme-switch">
-            <input type="checkbox" id="theme-toggle">
-            <label for="theme-toggle">
-                <i class="fas fa-sun"></i>
-                <i class="fas fa-moon"></i>
-            </label>
-        </div>
-    </nav>
+    <!-- 侧边栏由 sidebar.js 动态加载 -->
 
     <div class="container">
         <header class="header">
@@ -157,11 +149,8 @@
                 <!-- Image list items will be added here -->
             </div>
         </main>
-
-        <footer class="footer">
-            <p>© 2025 九宫格切图工具 - 让分享更简单</p>
-        </footer>
     </div>
+    <script src="../scripts/sidebar.js"></script>
     <script src="../scripts/nine_grid.js"></script>
 </body>
-</html> 
+</html>

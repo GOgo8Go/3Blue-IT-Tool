@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="../styles/sidebar.css" />
     <link rel="stylesheet" href="../styles/timestamp_converter.css">
     
     <!-- Umami 统计脚本延迟加载器 -->
@@ -41,24 +42,7 @@
 </head>
 
 <body>
-    <!-- 导航栏 -->
-    <nav class="navbar">
-        <div class="nav-logo">
-            <a href="../index.html">
-                <img src="../assets/favicon/favicon-32x32.png" alt="蔚蓝IT">
-                蔚蓝IT工具导航
-            </a>
-        </div>
-        <ul class="nav-links">
-            <li><a href="../index.html">返回首页</a></li>
-        </ul>
-        <div class="theme-switch">
-            <input type="checkbox" id="theme-toggle">
-            <label for="theme-toggle">
-                <i class="fas fa-moon"></i>
-            </label>
-        </div>
-    </nav>
+    <!-- 侧边栏由 sidebar.js 动态加载 -->
 
     <!-- 主内容 -->
     <main>
@@ -160,14 +144,7 @@
         </div>
     </main>
 
-    <!-- 页脚 -->
-    <footer>
-        <p>
-            &copy; 2023 蔚蓝个人工具导航站
-            <a href="https://github.com/core666666/Blue-IT-Tool" target="_blank">GitHub 开源地址</a>
-        </p>
-    </footer>
-
+    <script src="../scripts/sidebar.js"></script>
     <script src="../scripts/index.js"></script>
     <script src="../scripts/timestamp_converter.js"></script>
 </body>

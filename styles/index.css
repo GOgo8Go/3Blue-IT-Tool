@@ -4,6 +4,7 @@
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -14,15 +15,19 @@
     0% {
         left: -100%;
     }
+
     100% {
         left: 100%;
     }
 }
 
 @keyframes float {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-10px);
     }
@@ -32,9 +37,11 @@
     0% {
         box-shadow: 0 0 0 0 rgba(74, 108, 247, 0.3);
     }
+
     70% {
         box-shadow: 0 0 0 10px rgba(74, 108, 247, 0);
     }
+
     100% {
         box-shadow: 0 0 0 0 rgba(74, 108, 247, 0);
     }
@@ -103,7 +110,7 @@ body.dark-mode .page-header p {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, transparent 0%, rgba(255,255,255,0.1) 100%);
+    background: linear-gradient(135deg, transparent 0%, rgba(255, 255, 255, 0.1) 100%);
     z-index: -1;
     border-radius: 12px;
 }
@@ -115,12 +122,10 @@ body.dark-mode .page-header p {
     left: -100%;
     width: 50%;
     height: 100%;
-    background: linear-gradient(
-        90deg,
-        transparent,
-        rgba(255, 255, 255, 0.2),
-        transparent
-    );
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(255, 255, 255, 0.2),
+            transparent);
     animation: shine 4s linear infinite;
 }
 
@@ -134,7 +139,8 @@ body.dark-mode .page-header p {
 }
 
 .notice p::before {
-    content: '\f3ed'; /* FontAwesome 盾牌图标 */
+    content: '\f3ed';
+    /* FontAwesome 盾牌图标 */
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     margin-right: 12px;
@@ -176,7 +182,7 @@ body.dark-mode .page-header p {
     animation-delay: calc(var(--card-index, 0) * 0.05s + 0.6s);
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
-    box-shadow: 
+    box-shadow:
         0 5px 15px rgba(0, 0, 0, 0.04),
         0 15px 35px rgba(74, 108, 247, 0.05);
 }
@@ -204,9 +210,9 @@ body.dark-mode .page-header p {
     right: 0;
     width: 60px;
     height: 60px;
-    background-image: 
-        radial-gradient(circle at bottom right, 
-            rgba(74, 108, 247, 0.08), 
+    background-image:
+        radial-gradient(circle at bottom right,
+            rgba(74, 108, 247, 0.08),
             transparent 70%);
     border-radius: 0 0 18px 0;
     opacity: 0;
@@ -219,12 +225,13 @@ body.dark-mode .page-header p {
 
 body.dark-mode .tool-card {
     background: var(--card-dark);
-    box-shadow: 
+    box-shadow:
         0 5px 15px rgba(0, 0, 0, 0.15),
         0 15px 35px rgba(74, 108, 247, 0.1);
 }
 
-.tool-card, .tool-card * {
+.tool-card,
+.tool-card * {
     text-decoration: none !important;
 }
 
@@ -296,13 +303,13 @@ body.dark-mode .tool-card .card-description {
 /* 卡片悬停效果 */
 .tool-card:hover {
     transform: translateY(-8px);
-    box-shadow: 
+    box-shadow:
         0 20px 40px rgba(0, 0, 0, 0.08),
         0 15px 35px rgba(74, 108, 247, 0.1);
 }
 
 body.dark-mode .tool-card:hover {
-    box-shadow: 
+    box-shadow:
         0 20px 40px rgba(0, 0, 0, 0.2),
         0 15px 35px rgba(74, 108, 247, 0.15);
 }
@@ -827,7 +834,7 @@ body.dark-mode .stats-label {
 .dec-lines {
     width: 120px;
     height: 120px;
-    background: 
+    background:
         linear-gradient(90deg, transparent, transparent 49%, rgba(74, 108, 247, 0.1) 50%, transparent 51%, transparent),
         linear-gradient(0deg, transparent, transparent 49%, rgba(74, 108, 247, 0.1) 50%, transparent 51%, transparent);
     background-size: 20px 20px;
@@ -842,80 +849,80 @@ body.dark-mode .stats-label {
     .page-header h1 {
         font-size: 1.8rem;
     }
-    
+
     .page-header p {
         font-size: 1rem;
         padding: 0 10px;
     }
-    
+
     .notice {
         font-size: 13px;
         width: 95%;
         padding: 12px 10px;
     }
-    
+
     .notice p::before {
         font-size: 18px;
         margin-right: 8px;
     }
-    
+
     #tool-list {
         gap: 15px;
         padding: 10px;
     }
-    
+
     .tool-card {
         width: 150px;
         height: 150px;
         padding: 15px;
         gap: 8px;
     }
-    
+
     .tool-card .icon-wrapper {
         width: 60px;
         height: 60px;
     }
-    
+
     .tool-card .icon-bg {
         width: 45px;
         height: 45px;
     }
-    
+
     .tool-card i {
         font-size: 24px;
     }
-    
+
     .tool-card h3 {
         font-size: 15px;
     }
-    
+
     .tool-card .card-description {
         font-size: 12px;
         -webkit-line-clamp: 2;
     }
-    
+
     .category-button {
         padding: 6px 12px;
         font-size: 13px;
     }
-    
+
     .tools-stats {
         flex-wrap: wrap;
         gap: 15px;
     }
-    
+
     .stats-item {
         padding: 12px 15px;
     }
-    
+
     .stats-count {
         font-size: 22px;
     }
-    
+
     .stats-label {
         font-size: 12px;
     }
-    
+
     .decoration {
         opacity: 0.3;
         transform: scale(0.7);
