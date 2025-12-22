@@ -16,12 +16,13 @@
         "name": "开发工具",
         "tools": [
           { "name": "JSON 格式化", "path": "json_formatter.html", "icon": "fa-code" },
+          { "name": "HTML 预览", "path": "html_preview.html", "icon": "fa-file-code" },
           { "name": "加密解密", "path": "crypto_tool.html", "icon": "fa-lock" },
           { "name": "Base64 转换", "path": "base64convert.html", "icon": "fa-exchange-alt" },
           { "name": "时间戳转换", "path": "timestamp_converter.html", "icon": "fa-clock" },
           { "name": "UUID 生成", "path": "uuid_generation.html", "icon": "fa-fingerprint" },
           { "name": "密码生成", "path": "password_generation.html", "icon": "fa-key" },
-          { "name": "HTML 预览", "path": "html_preview.html", "icon": "fa-file-code" }
+          { "name": "正则测试器", "path": "regex_tester.html", "icon": "fa-asterisk" }
         ]
       },
       {
